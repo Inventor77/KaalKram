@@ -1,0 +1,134 @@
+:root {
+	/* dark shades of primary color */
+	--clr-primary-1: hsl(205, 86%, 15%);
+	--clr-primary-2: hsl(205, 77%, 25%);
+	--clr-primary-3: hsl(205, 72%, 35%);
+	--clr-primary-4: hsl(205, 63%, 45%);
+
+	/* primary main color */
+	--clr-primary-5: hsl(205, 76%, 55%);
+
+	/* lighter shades of primary color */
+	--clr-primary-6: hsl(205, 89%, 65%);
+	--clr-primary-7: hsl(205, 90%, 75%);
+	--clr-primary-8: hsl(205, 86%, 80%);
+	--clr-primary-9: hsl(205, 90%, 87 %);
+	--clr-primary-10: hsl(205, 90%, 94%);
+
+	/* darkest grey - used for headings */
+	--clr-grey-1: hsl(209, 61%, 16%);
+	--clr-grey-2: hsl(211, 39%, 23%);
+	--clr-grey-3: hsl(209, 34%, 30%);
+	--clr-grey-4: hsl(209, 28%, 39%);
+
+	/* grey - used for paragraphs */
+	--clr-grey-5: hsl(210, 22%, 49%);
+	--clr-grey-6: hsl(209, 23%, 60%);
+	--clr-grey-7: hsl(211, 27%, 70%);
+	--clr-grey-8: hsl(210, 31%, 80%);
+	--clr-grey-9: hsl(212, 33%, 89%);
+	--clr-grey-10: hsl(210, 36%, 96%);
+
+	/* solid color */
+	--clr-white: #fff;
+	--clr-black: #222;
+	--clr-red-dark: hsl(360, 67%, 44%);
+	--clr-red-light: hsl(360, 71%, 66%);
+	--clr-green-dark: hsl(125, 67%, 44%);
+	--clr-green-light: hsl(125, 71%, 66%);
+	--clr-blue-light: hsl(203, 100%, 50%);
+	--clr-midnight: #104f55;
+
+	/* gradient color */
+	--sky-gradient: -webkit-linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	--ocean-gradient: -webkit-linear-gradient(#00f38d 0%, #009eff 100%);
+
+	--spacing: 0.1rem;
+	--radius: 0.25rem;
+	--light-shadow_less-spread: 0 1px 2px rgba(0, 0, 0, 0.1);
+	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	--dark-shadow_less-spread: 0 1px 5px rgba(0, 0, 0, 0.5);
+	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	--max-width: 1170px;
+}
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: var(--clr-primary-1);
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	letter-spacing: var(--spacing);
+	text-transform: capitalize;
+	line-height: 1.25;
+	margin-bottom: 0.75rem;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 1.9rem;
+}
+h3 {
+	font-size: 1.4rem;
+}
+h4 {
+	font-size: 1rem;
+}
+
+p {
+	margin-bottom: 1.25rem;
+	color: var(--clr-primary-10);
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.noUserSelect {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+svg {
+	fill: var(--clr-grey-5);
+	cursor: pointer;
+}
+svg:hover {
+	background: var(--clr-grey-9);
+	border-radius: 50%;
+}
+
+.pointer {
+	cursor: pointer;
+}
+.pointer svg:hover {
+	fill: var(--clr-grey-1);
+}
